@@ -2,7 +2,8 @@ const data = [
     {
         title: "HTML 5",
         description: "Construa a estrutura da web e dê vida às suas ideias online.",
-        image: "img/html.png" //Caminho da imagem para o primeiro card
+        image: "img/html.png", //Caminho da imagem para o primeiro card
+        link: "index.html"
     },
     {
         title: "CSS",
@@ -84,7 +85,7 @@ const displayData = data => {
                 <div class="card-data">
                     <span class="card-description">${e.description}</span>
                     <h2 class="card-title">${e.title}</h2>
-                    <a href="" class="card-button">Leia Mais</a>
+                    <a href="" class="card-button">${e.link}</a>
                 </div>
         </article>
         
