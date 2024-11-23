@@ -85,7 +85,7 @@ const displayData = data => {
                 <div class="card-data">
                     <span class="card-description">${e.description}</span>
                     <h2 class="card-title">${e.title}</h2>
-                    <a href="" class="card-button">${e.link}</a>
+                    <a href="${e.link}" class="card-button"> veja Mais</a>
                 </div>
         </article>
         
