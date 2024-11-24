@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="shortcut icon" href="/Plus-Education.github.io/img/logo.png" type="image/x-icon">
+    <title>HTML & CSS (Módulo 2)</title>
+    <style>
+
+        /*OBRIGATORIOS A TER*/
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+            font-family: 'Comfortaa', sans-serif;
+            background-color: #f700ff;
+            font-size: 1em;
+        }
+
+        #borda {
+            background-color: white;
+            margin: 10px auto;
+            padding: 20px;
+            max-width: 700px;
+            min-width: 300px;
+            border-radius: 10px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            margin: auto; /* Ajuste para centralizar no meio da página */
+        }
+
+        .link {
+            color: black;
+            background-color: white;
+            text-decoration: none;
+            display: inline-flex;
+            text-align: center;
+            font-size: 20px;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+        
+        h2{
+            margin-top: 0px;
+        }
+
+        /*PODE APAGAR
+        */
+        .elementos{
+            text-decoration: none;
+            margin: 5px;
+            
+        }
+
+        .elementos:visited{
+            color: #f700ff;
+        }
+
+        .elementos:hover{
+            color: black;
+        }
+
+        .elementos:active{
+            color: #f700ff;
+        }
+
+        .hover p{
+            display: none; /*faz o elemento sumir*/
+        }
+
+        .hover:hover p{
+            display: block;
+            color:black;
+        }
+
+        .hover:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <!--PSICOLOGIA DAS CORES-->
+    <div id="borda">
+        <h1>Psicologia das Cores</h1>
+        <hr>
+        <p>A psicologia das cores estuda como as cores influenciam o comportamento humano, nossas emoções e percepções. Cada cor pode desencadear diferentes reações e é usada estrategicamente em várias áreas, como marketing, design e arte, para evocar sensações específicas e influenciar a decisão de compra ou a percepção de uma marca. Aqui estão alguns exemplos de associações comuns com cada cor:</p>
+
+        <ul>
+            <li><strong>Vermelho:</strong> Associado à energia, paixão e urgência. Estimula o apetite, razão pela qual é comum em restaurantes. Também pode transmitir sentimentos de alerta ou perigo.</li>
+            <br>
+            <li><strong>Azul:</strong> Transmite calma, confiança e segurança. É muito usado em marcas que querem passar uma imagem de estabilidade e profissionalismo, como bancos e empresas de tecnologia.</li>
+            <br>
+            <li><strong>Amarelo:</strong> Evoca felicidade, otimismo e energia. Porém, em excesso, pode causar ansiedade. Marcas infantis e empresas que querem transmitir positividade o utilizam bastante.</li>
+            <br>
+            <li><strong>Verde:</strong> Simboliza natureza, saúde e tranquilidade. Também está associado ao dinheiro e prosperidade. É muito usado em empresas de produtos naturais, de sustentabilidade ou de bem-estar.</li>
+            <br>
+            <li><strong>Laranja:</strong> Comunica entusiasmo, criatividade e determinação. Assim como o vermelho, pode estimular o apetite e é comum em campanhas que querem atrair a atenção de forma amigável e acessível.</li>
+            <br>    
+            <li><strong>Roxo:</strong> Associado ao luxo, mistério e criatividade. É comumente usado em produtos de beleza ou marcas que querem transmitir sofisticação e originalidade.</li>
+            <br>
+            <li><strong>Preto:</strong> Sugere elegância, poder e autoridade. Embora seja versátil, em excesso pode parecer opressor. É popular em marcas de luxo e design minimalista.</li>
+            <br>
+            <li><strong>Branco:</strong> Representa pureza, simplicidade e frescor. Muitas vezes usado no design para criar um visual limpo e moderno, além de dar sensação de espaço.</li>
+        </ul>
+    </div>
+
+    <!--CIRCULO CROMATICO-->
+    <div id="borda">
+        <h1>Círculo Cromático</h1>
+        <hr>
+        <h2>Harmonia de Cores</h2>
+        <p>A harmonia de cores refere-se à combinação de cores de maneira que elas se complementem, criando um efeito estético agradável e equilibrado. Existem várias teorias e esquemas de harmonia de cores que podem ser utilizados em design, arte e decoração. Aqui estão alguns dos principais:</p>
+        <div class="container">
+            <picture>
+                <source media="(max-width: 500px)" srcset="img/circulocromaticop.png">
+                <source media="(max-width: 700px)" srcset="img/circulocromaticom.png">
+                <img src="img/circulocromaticog.png" alt="imagem flexivel">
+            </picture>
+        </div>
+        <br>
+
+            <h3>
+                Cores Complementares
+            </h3>
+            <div class="container">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="img/corescomplementaresp.png">
+                    <source media="(max-width: 700px)" srcset="img/corescomplementaresm.png">
+                    <img src="img/corescomplementaresg.png" alt="imagem flexivel">
+                </picture>
+            </div>
+            <br>
+
+            <h3>
+                Cores Análogas
+            </h3>
+            <div class="container">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="img/coresanalogasp.png">
+                    <source media="(max-width: 700px)" srcset="img/coresanalogasm.png">
+                    <img src="img/coresanalogasg.png" alt="imagem flexivel">
+                </picture>
+            </div>
+            <br>
+
+            <h3>
+                Cores Triádicas
+            </h3>
+            <div class="container">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="img/corestriadicasp.png">
+                    <source media="(max-width: 700px)" srcset="img/corestriadicasm.png">
+                    <img src="img/corestriadicasg.png" alt="imagem flexivel">
+                </picture>
+            </div>
+            <br>
+
+            <h3>
+               Cores Tetrádicas
+            </h3>
+            <div class="container">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="img/corestretradicasp.png">
+                    <source media="(max-width: 700px)" srcset="img/corestretradicasm.png">
+                    <img src="img/corestretradicasg.png" alt="imagem flexivel">
+                </picture>
+            </div>
+            <br>
+
+            <h3>
+                Cores Monocromáticas
+            </h3>
+            <div class="container">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="img/monocromiap.png">
+                    <source media="(max-width: 700px)" srcset="img/monocromiam.png">
+                    <img src="img/monocromiag.png" alt="imagem flexivel">
+                </picture>
+            </div>
+            <br>
+
+            <h3>
+                Cores em Quadrado
+            </h3>
+            <div class="container">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="img/coresemquadradop.png">
+                    <source media="(max-width: 700px)" srcset="img/coresemquadradom.png">
+                    <img src="img/coresemquadradog.png" alt="imagem flexivel">
+                </picture>
+            </div>
+            <br>
+
+            <h3>
+                Cores Análogas e uma Complementar
+            </h3>
+            <div class="container">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="img/coresanalogascomplementaresp.png">
+                    <source media="(max-width: 700px)" srcset="img/coresanalogascomplementaresm.png">
+                    <img src="img/coresanalogascomplementaresg.png" alt="imagem flexivel">
+                </picture>
+            </div>
+        <br>
+        
+        <h3>
+            Cores Análogas Relacionais
+        </h3>
+        <div class="container">
+            <picture>
+                <source media="(max-width: 500px)" srcset="img/coresanalogasrelacionaisp.png">
+                <source media="(max-width: 700px)" srcset="img/coresanalogasrelacionaism.png">
+                <img src="img/coresanalogasrelacionaisg.png" alt="imagem flexivel">
+            </picture>
+        </div>
+        <br>
+
+        <h3>
+            Cores Intercaladas
+        </h3>
+        <div class="container">
+            <picture>
+                <source media="(max-width: 500px)" srcset="img/coresintercaladasp.png">
+                <source media="(max-width: 700px)" srcset="img/coresintercaladasm.png">
+                <img src="img/coresintercaladasg.png" alt="imagem flexivel">
+            </picture>
+        </div>
+        <br>
+
+        <h3>Cores Primárias</h3>
+        <div class="container">
+            <picture>
+                <source media="(max-width: 500px)" srcset="img/coresprimariasp.png">
+                <source media="(max-width: 700px)" srcset="img/coresprimariasm.png">
+                <img src="img/coresprimariasg.png" alt="imagem flexivel">
+            </picture>
+        </div>
+        <br>
+
+        <h3>Cores Secundárias</h3>
+        <div class="container">
+            <picture>
+                <source media="(max-width: 500px)" srcset="img/coressecundariasp.png">
+                <source media="(max-width: 700px)" srcset="img/coressecundariasm.png">
+                <img src="img/coressecundariasg.png" alt="imagem flexivel">
+            </picture>
+        </div>
+        <br>
+
+        <h3>Cores Terciárias</h3>
+        <div class="container">
+            <picture>
+                <source media="(max-width: 500px)" srcset="img/coresterciariasp.png">
+                <source media="(max-width: 700px)" srcset="img/coresterciariasm.png">
+                <img src="img/coresterciariasg.png" alt="imagem flexivel">
+            </picture>
+        </div>
+            <br>
+            
+            <h3>Temperatura das Cores</h3>
+            <div class="container">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="img/temperaturadascoresp.png">
+                    <source media="(max-width: 700px)" srcset="img/temperaturadascoresm.png">
+                    <img src="img/temperaturadascoresg.png" alt="imagem flexivel">
+                </picture>
+            </div>
+            <br>
+    </div>
+
+    <!--Degradê-->
+    <div id="borda">
+        <h1>Degradê</h1>
+        <hr>
+        <div id="borda" style="background-image: linear-gradient(to bottom, white, blue); height: 250px;"></div>
+    </div>
+        
+    <!--Tipografia-->
+    <div id="borda">
+        <h1>Tipografia</h1>
+        <hr>
+        <p>A tipografia é um elemento essencial no design gráfico e no desenvolvimento de interfaces. Ela envolve o uso e o estilo das fontes para comunicar visualmente uma mensagem, garantindo legibilidade, hierarquia e estética.</p>
+
+        <h2>Elementos Básicos da Tipografia</h2>
+        <ul>
+            <li><strong>Fonte:</strong> Conjunto de caracteres com o mesmo design (ex: Arial, Times New Roman).</li>
+            <br>
+            <li><strong>Família Tipográfica:</strong> Conjunto de variações de uma mesma fonte (ex: Arial Regular, Arial Bold).</li>
+            <br>
+            <li><strong>Peso:</strong> Espessura da fonte (ex: leve, regular, negrito).</li>
+            <br>
+            <li><strong>Altura da Linha (line-height):</strong> Espaçamento vertical entre linhas de texto, que ajuda na legibilidade.</li>
+            <br>
+            <li><strong>Espaçamento entre Letras (letter-spacing):</strong> Espaçamento horizontal entre letras, que afeta a densidade do texto.</li>
+        </ul>
+        <br>
+
+        <h2>Princípios de Tipografia no Design</h2>
+        <ul>
+            <li><strong>Legibilidade:</strong> Escolher fontes que sejam fáceis de ler, principalmente em tamanhos menores.</li>
+            <br>
+            <li><strong>Hierarquia Visual:</strong> Usar tamanhos, pesos e cores diferentes para diferenciar títulos, subtítulos e corpo do texto.</li>
+            <br>
+            <li><strong>Consistência:</strong> Limitar a quantidade de fontes e estilos para manter a unidade visual.</li>
+        </ul>
+        <br>
+
+        <h2>Tipografia na Web</h2>
+        <p>No desenvolvimento web, o CSS oferece diversas propriedades para manipular a tipografia:</p>
+        <ul>
+            <li><strong>font-family:</strong> Define a fonte principal.</li>
+            <br>
+            <li><strong>font-size:</strong> Define o tamanho do texto.</li>
+            <br>
+            <li><strong>font-weight:</strong> Define a espessura da fonte.</li>
+            <br>
+            <li><strong>line-height:</strong> Define a altura da linha.</li>
+            <br>
+            <li><strong>letter-spacing:</strong> Define o espaçamento entre letras.</li>
+        </ul>
+    </div>
+
+    <!--Anatomia do Tipo-->
+    <div id="borda">
+        <h1>Anatomia do Tipo</h1>
+        <hr>
+        <div class="container">
+            <picture>
+                <source media="(max-width: 500px)" srcset="img/tipografia1p.png">
+                <source media="(max-width: 700px)" srcset="img/tipografia1m.png">
+                <img src="img/tipografia1g.png" alt="imagem flexivel">
+            </picture>
+        </div>
+        <br>
+
+        <div class="container">
+            <picture>
+                <source media="(max-width: 500px)" srcset="img/tipografia2p.png">
+                <source media="(max-width: 700px)" srcset="img/tipografia2m.png">
+                <img src="img/tipografia2g.png" alt="imagem flexivel">
+            </picture>
+        </div>
+        <br>
+
+        <div class="container">
+            <picture>
+                <source media="(max-width: 500px)" srcset="img/tipografia3p.png">
+                <source media="(max-width: 700px)" srcset="img/tipografia3m.png">
+                <img src="img/tipografia4g.png" alt="imagem flexivel">
+            </picture>
+        </div>
+        <br>
+
+        <div class="container">
+            <picture>
+                <source media="(max-width: 500px)" srcset="img/tipografia4p.png">
+                <source media="(max-width: 700px)" srcset="img/tipografia4m.png">
+                <img src="img/tipografia4g.png" alt="imagem flexivel">
+            </picture><data value=""></data>
+        </div>
+    </div>
+
+    <!--Tamanho de fonte e suas medidas-->
+    <div id="borda">
+        <h1>Tamanho de fonte e suas medidas</h1>
+        <hr>
+        <h2>Medidas Absolutas</h2>
+        <p>As medidas absolutas são fixas e não mudam com o tamanho da tela ou com as configurações de dispositivo. São úteis quando você quer que algo tenha um tamanho específico, mas elas não respondem bem em layouts responsivos.</p>
+        <ul>
+            <li><strong>pt (ponto) e pc (pica):</strong> Medidas de tipografia tradicional. Ex.: font-size: 12pt;</li>
+            <br>
+            <li><strong>in (polegada):</strong> Pouco comum em telas, mais para impressão. Ex.: width: 2in;</li>
+            <br>
+            <li><strong>cm, mm (centímetros e milímetros):</strong> Usadas mais em impressão do que em telas. Ex.: width: 5cm;</li>
+            <br>
+            <li><strong>px (pixel):</strong> Unidade mais comum. Define o tamanho em pixels. Ex.: width: 200px;</li>
+        </ul>
+        <br>
+
+        <h2>Medidas Relativas</h2>
+        <p>Medidas relativas se ajustam de acordo com outros elementos na página, tornando-as ideais para layouts responsivos. Elas dependem do contexto, como o tamanho da fonte do elemento pai ou da largura da viewport.</p>
+        <ul>
+            <li><strong>em: </strong>Relativa ao tamanho da fonte do elemento pai. Ex.: padding: 1.5em;</li>
+            <br>
+            <li><strong>rem:</strong> Relativa ao tamanho da fonte raiz (<html>). Mais consistente em layouts escaláveis. Ex.: font-size: 2rem;</li>
+            <br>
+            <li><strong>%:</strong> Relativa ao elemento pai. Ex.: width: 50%;</li>
+            <br>
+            <li><strong>vw e vh (viewport width e viewport height):</strong> Relativas ao tamanho da janela de visualização. Ex.: width: 100vw; ocupa toda a largura da tela.</li>
+            <br>
+            <li><strong>vmin e vmax:</strong> Relativas ao menor ou maior lado da viewport. Ex.: width: 50vmin; adapta-se automaticamente.</li>
+        </ul>
+        <br>
+
+        <h2>Quando usar cada uma</h2>
+        <ul>
+            <li><strong>Medidas absolutas</strong> (como px) são úteis para elementos que precisam de um tamanho fixo, como um ícone específico.</li>
+            <br>
+            <li><strong>Medidas relativas</strong> são ideais para design responsivo e acessível. Ex.: rem para tamanhos de fonte que se ajustam com a configuração do navegador do usuário, vw e vh para se adaptar à tela do dispositivo.</li>
+        </ul>
+    </div>
+
+    <!--Shorthand-->
+    <div id="borda">
+        <h1>Shorthand</h1>
+        <hr>
+        <p>Shorthand é uma forma de escrever várias propriedades de estilo em  uma única linha. Isso pode tornar o código mais conciso e fácil de ler.</p>
+        <code  style="font-size: 1.4em;">
+            <p>font-style -> font-weight -> font-size -> font-family</p>
+        </code>
+        <p>Exemplo:</p>
+        <p style="font: italic bolder 1.2em 'Corfortaa', sans-serif;">font: italic bolder 1.4em 'Corfortaa' sans-serif;</p>        
+
+    </div>
+
+    <!--Baixar Fontes-->
+    <div id="borda">
+        <h1>Baixar Fontes</h1>
+        <hr>
+        <h2>Google Fontes</h2>
+        <p>Para baixar fontes, você pode usar o Google Fonts, que oferece uma ampla variedade de fontes gratuitas e de alta qualidade. Além disso, você pode baixar fontes diretamente do site do fornecedor da fonte.</p>
+        <p>Segueo código para colocar fontes do Google Fonts no seu site:</p>
+        <code style="font-size: 1.4em;">
+            <p> @import url('https://fonts.googleapis.com/css2?family=Open+Sans:w ght@300;400;600;700&display=swap');</p>
+        </code>
+        <br>
+
+        <h2>Dafonte</h2>
+        <p>Outra opção é o Dafont, que oferece uma ampla variedade de fontes gratuitas e de alta qualidade. Além disso, você pode baixar fontes diretamente do site do fornecedor da fonte.</p>
+        <p>Segueo código para colocar fontes do Dafont no seu site:</p>
+        <code style="font-size: 1.4em;">
+            <p>
+                @font-face {<br>
+                    font-family: 'MinhaFontePersonalizada';<br>
+                    src: url('fonts/MinhaFonte.woff2') format('woff2'),<br>
+                         url('fonts/MinhaFonte.woff') format('woff'),<br>
+                         url('fonts/MinhaFonte.ttf') format('truetype');<br>
+                    font-weight: normal;<br>
+                    font-style: normal;
+                }<br><br>
+                
+                /* Usando a fonte no projeto */<br>
+                body {<br>
+                    font-family: 'MinhaFontePersonalizada', sans-serif;<br>
+                }                
+            </p>
+        </code>
+    </div>
+    
+    <!--Tipos de alinhamento-->
+    <div id="borda">
+        <h1>Tipos de alinhamento</h1>
+        <hr>
+        <p>Existem vários tipos de alinhamento que você pode usar em um projeto  de design de interface de usuário:</p> 
+        <ul>
+            <li><strong>Alinhamento à esquerda:</strong> O texto é alinhado à esquerda da caixa de texto. (text-align: left;)</li>
+            <br>
+            <li><strong>Alinhamento à direita:</strong> O texto é alinhado à direita da caixa de texto.  (text-align: right;)</li>
+
+            <br>
+            <li><strong>Alinhamento central:</strong> O texto é alinhado ao centro da caixa de texto.  (text-align: center;)</li>
+
+            <br>
+            <li><strong>Alinhamento justificado:</strong> O texto é alinhado à esquerda e à direita da caixa de texto, com espaçamento igual entre as palavras.  (text-align: justify;)</li>
+        </ul>
+
+    </div>
+
+    <!--Diferença de Class & Id-->
+    <div id="borda">
+        <h1>Diferença entre Class e Id</h1>
+        <hr>
+        <p>Existem dois tipos de seletores em CSS: Class e Id. A diferença entre eles é que o Id é único e pode ser usado apenas uma vez em um documento HTML, enquanto a Class pode ser usada várias vezes.</p>
+        <p>Segueo exemplo:</p>
+        <code style="font-size: 1.4em;">
+            <p>
+                <h1 id="titulo">Título</h1>
+                <p class="paragrafo">Parágrafo</p>
+                <p class="paragrafo">Parágrafo</p>
+            </p>
+        </code>
+    </div>
+
+    <!--Pseudo-classes-->
+    <div id="borda">
+        <h1>Pseudo-classes</h1>
+        <hr>
+        <p>Pseudo-classes são usadas para selecionar elementos que não possuem um atrib uto específico, mas que podem ser selecionados com base em um estado específico.</p>
+        <ol>
+            <li><strong>:hover</strong> - Seleciona o elemento quando o mouse está sobre ele.</li>
+            <br>
+            <div class="hover">
+                passe o mouse Aqui
+                <p>TEXTO ESCONDIDO...</p>
+            </div>
+            <br><br>
+            <li><strong>:visited</strong> - Seleciona o elemento quando o usuário já visitou a página.</li>
+            <br>
+            <li><strong>:active</strong> - Seleciona o elemento quando ele é clicado.</li>
+            <br>
+            <li><strong>:focus</strong> - Seleciona o elemento quando ele recebe o foco.</li>
+            <br>
+            <li><strong>:nth-child(n)</strong> - Estiliza o elemento com base em sua posição entre os elementos irmãos. Você pode usar fórmulas para selecionar posições específicas.</li>
+            <br>
+            <li><strong>:nth-of-type(n)</strong> - Semelhante ao nth-child, mas considera apenas o tipo de elemento.</li>
+            <br>
+            <li><strong>:not(selector)</strong> - Seleciona elementos que não correspondem ao seletor especificado.</li>
+            <br>
+            <li><strong>:checked</strong> - Aplica estilos a elementos de formulário que estão marcados, como checkboxes e radio buttons.</li>
+            <br>
+            <li><strong>:disabled</strong> - Aplica estilos aos elementos de formulário que estão desabilitados.</li>
+            <br>
+            <li><strong>:first-child e :last-child</strong> - Estilizam o primeiro e o último filho de um elemento.</li>
+            <br>
+            <li><strong>:before e :after</strong> - São pseudo-elementos que permitem adicionar conteúdo antes ou depois do conteúdo real do elemento.</li>
+        </ol>
+    </div>
+
+    <!--Pseudo-elementos-->
+    <div id="borda">
+        <h1>Pseudo-elementos</h1>
+        <hr>
+        <p>Pseudo-elementos são usados para adicionar conteúdo antes ou depois do conteúdo real do elemento.</p>
+
+        <ol>
+            <li><strong>::before e ::after</strong> - Esses pseudo-elementos permitem adicionar conteúdo antes ou depois de um elemento sem alterar o HTML. São ótimos para inserir ícones, textos decorativos, ou elementos visuais.</li>
+            <br>
+            <li><strong>::first-line e ::first-letter</strong> - Esses pseudo-elementos são úteis para estilizar partes específicas de um bloco de texto, como a primeira linha ou a primeira letra.</li>
+            <br>
+            <li><strong>::selection</strong> - O pseudo-elemento ::selection permite estilizar a área de seleção de texto, mudando a cor de fundo e o texto quando o usuário seleciona um trecho com o mouse.</li>
+            <br>
+            <li><strong>::marker</strong> - Esse pseudo-elemento é específico para listas (ul e ol) e permite estilizar o marcador da lista (ponto ou número).</li>
+            <br>
+            <li><strong>::placeholder</strong> - Esse pseudo-elemento estiliza o texto placeholder de um campo de entrada (input ou textarea).</li>
+        </ol>
+
+        <p>Exemplo:</p>
+        <ul>
+            <li><a class="elementos" href="https://www.youtube.com"target="_blank">YouTube</a></li>
+            <li><a class="elementos" href="https://www.whatsapp.com" target="_blank">Whatsapp</a></li>
+            <li><a class="elementos" href="https://www.cursoemvideo.com" target="_blank">Curso em Vídeo</a></li>
+        </ul>
+    </div>
+
+     <!--Box Model-->
+    <div id="borda">
+        <h1>Box Model</h1>
+        <hr>
+        <h2>Ordem de uma caixa de texto</h2>
+        <p>Box -> Padding -> Borde -> Margin</p>
+        <ul>
+            <li><strong>Box Level:</strong> Elementos que ocupam toda a largura disponível e sempre começam em uma nova linha. Exemplo: div, p, h1. Podem ter largura ( width) e altura ( height) definidas, além de margens e preenchimentos em todas as superfícies.</li>
+            <br>
+            <li><strong>Inline Level:</strong> Elementos que ocupam apenas o espaço necessário para o seu conteúdo e ficam na mesma linha que outros elementos. Exemplo: span, a, strong. Não permitir largura e altura diretamente, mas aceitamos margens e preenchimentos apenas lateralmente.</li>
+        </ul>
+    </div>
+
+        <div class="container">
+            <a class="link" href="html e css 1.html">ANTERIOR</a>
+            <a class="link" href="html e css 3.html">PRÓXIMO</a>
+        </div>
+        
+</body>
+</html>

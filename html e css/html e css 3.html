@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="shortcut icon" href="/Plus-Education.github.io/img/logo.png" type="image/x-icon">
+    
+    <title>HTML & CSS (Módulo 3)</title>
+    <style>
+
+        /*OBRIGATORIOS A TER*/
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+            font-family: 'Comfortaa', sans-serif;
+            background-color: #07fae6;
+            font-size: 1em;
+        }
+
+        #borda {
+            background-color: white;
+            margin: 10px auto;
+            padding: 20px;
+            max-width: 700px;
+            min-width: 300px;
+            border-radius: 10px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            margin: auto; /* Ajuste para centralizar no meio da página */
+        }
+
+        .link {
+            color: black;
+            background-color: white;
+            text-decoration: none;
+            display: inline-flex;
+            text-align: center;
+            font-size: 20px;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+        
+        h2{
+            margin-top: 0px;
+        }
+
+        /*PODE APAGAR
+        */
+        .elementos{
+            text-decoration: none;
+            margin: 5px;
+            
+        }
+
+        .elementos:visited{
+            color: #f700ff;
+        }
+
+        .elementos:hover{
+            color: black;
+        }
+
+        .elementos:active{
+            color: #f700ff;
+        }
+
+        .hover p{
+            display: none; /*faz o elemento sumir*/
+        }
+
+        .hover:hover p{
+            display: block;
+            color:black;
+        }
+
+        .hover:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <!--Git & Github-->
+    <div id="borda">
+        <h1>Git & Github</h1>
+        <hr>
+        <ul>
+            <li><strong>Git: </strong>É um sistema de controle de versões distribuídas usado para gerenciar e gerenciar alterações no código-fonte de projetos. Ele é executado localmente no seu computador e permite:
+            <br><br>
+            <ul>
+                <li>Criar repositórios.</li>
+                <li>Rastrear alterações nos arquivos.</li>
+                <li>Reverter para versões anteriores.</li>
+                <li>Trabalhar de forma colaborativa, mesmo sem internet.</li>
+            </ul>
+            </li>
+            <br><br>
+
+            <li><strong>GitHub: </strong>É uma plataforma baseada na web que usa o Git para armazenar repositórios. Ele funciona como uma rede social para desenvolvedores, permitindo que você:
+            <br><br>
+            <ul>
+                <li>Armazene projetos remotamente.</li>
+                <li>Colabore com outros desenvolvedores.</li>
+                <li>Gerencie projetos usando issues, pull requests e branches.</li>
+                <li>Integre com outras ferramentas, como CI/CD (Integração Contínua/Entrega Contínua).</li>
+            </ul>
+            </li>
+        </ul>
+
+        
+    </div>
+
+    <div class="container">
+        <a class="link" href="html e css 2.html">ANTERIOR</a>
+        <a class="link" href="html e css 4.html">PRÓXIMO</a>
+    </div>
+    
+</body>
+</html>
