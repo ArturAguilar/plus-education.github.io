@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Plus-Education.github.io/img/logo.png" type="image/x-icon">
+    <title>Plus Education - Desenvolvimento Web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+      /* Configuração global */
+      body, html {
+          margin: 0;
+          padding: 0;
+          font-family: 'Comfortaa', sans-serif;
+          overflow-x: hidden;
+      }
+
+      body {
+          color: #333;
+          background-color: #f9f9f9;
+          --primary-color: #007BFF; /* Azul inicial */
+      }
+
+      /* Menu */
+      header {
+          background-color: var(--primary-color);
+          color: white;
+          padding: 10px 20px;
+          position: fixed;
+          top: 0;
+          width: 100%;
+          z-index: 1000;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      nav {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          max-width: 1200px;
+          margin: 0 auto;
+      }
+
+      nav .logo {
+          font-size: 1.8rem;
+          font-weight: bold;
+      }
+
+      nav ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          gap: 20px;
+          align-items: center;
+      }
+
+      nav ul li {
+          display: inline;
+      }
+
+      nav ul li a, nav ul li button {
+          text-decoration: none;
+          color: white;
+          font-size: 1rem;
+          transition: color 0.3s ease;
+          background: none;
+          border: none;
+          cursor: pointer;
+          font-family: 'Comfortaa', sans-serif;
+      }
+
+      nav ul li a:hover, nav ul li button:hover {
+          color: #cce4ff;
+      }
+
+      /* Hero Section */
+      .hero {
+          background-color: #007BFF;
+          color: white;
+          text-align: center;
+          padding: 100px 20px;
+      }
+
+      .hero h1 {
+          font-size: 3rem;
+          margin-bottom: 20px;
+      }
+
+      .hero p {
+          font-size: 1.5rem;
+          margin-bottom: 30px;
+      }
+
+      /* Cursos de Tecnologia */
+
+      a{
+        text-decoration: none;
+      }
+      .courses-section {
+          padding: 60px 20px;
+          background-color: #ffffff;
+      }
+
+      .courses-section h2 {
+          text-align: center;
+          font-size: 2.5rem;
+          color: var(--primary-color);
+          margin-bottom: 40px;
+      }
+
+      .courses-container {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 20px;
+          max-width: 1200px;
+          margin: 0 auto;
+      }
+
+      .course-card {
+          background-color: #f9f9f9;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          overflow: hidden;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .course-card:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      .course-card img {
+          width: 100%;
+          height: 180px;
+          object-fit: cover;
+      }
+
+      .course-card .card-content {
+          padding: 20px;
+      }
+
+      .course-card h3 {
+          font-size: 1.5rem;
+          color: #333;
+          margin-bottom: 10px;
+      }
+
+      .course-card p {
+          font-size: 1rem;
+          color: #666;
+          line-height: 1.5;
+      }
+
+      .course-card a {
+          display: inline-block;
+          margin-top: 10px;
+          color: var(--primary-color);
+          font-weight: bold;
+          text-decoration: none;
+          transition: color 0.3s ease;
+      }
+
+      .course-card a:hover {
+          color: #0056b3;
+      }
+
+      /* Footer */
+      footer {
+          background-color: #333;
+          color: white;
+          text-align: center;
+          padding: 20px;
+          font-size: 0.9rem;
+      }
+
+      footer a {
+          color: var(--primary-color);
+          text-decoration: none;
+      }
+
+      footer a:hover {
+          text-decoration: underline;
+      }
+  </style>
+</head>
+<body>
+    <!-- Menu -->
+    <header>
+        <nav>
+            <div class="logo">Plus Education</div>
+            <ul>
+                <li><a href="/Plus-Education.github.io/home.html">Início</a></li>
+                <li><a href="/Plus-Education.github.io/home.html">Cursos Tech</a></li>
+                <li><a href="/Plus-Education.github.io/home.html">Cursos BNCC</a></li>
+                <li><a href="/Plus-Education.github.io/home.html">Sobre</a></li>
+                <li><a href="/Plus-Education.github.io/home.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Tela Azul de Início (Hero Section) -->
+    <section class="hero" id="home">
+        <h1>Bem-vindo ao Curso de Desenvolvimento Web</h1>
+        <p>Aprenda a criar websites incríveis com HTML, CSS e JavaScript.</p>
+    </section>
+
+    <!-- Cursos de Desenvolvimento Web -->
+    <section class="courses-section" id="cursos">
+        <div class="courses-container">
+            <a href="desenvolvimento web 1.html"><div class="course-card">
+                <img src="https://via.placeholder.com/300x180" alt="Curso 1">
+                <div class="card-content">
+                    <h3>HTML & CSS</h3>
+                    <p>Entenda a estrutura básica de um site com HTML.</p>
+                </div>
+            </div></a>
+
+            <a href=""><div class="course-card">
+                <img src="https://via.placeholder.com/300x180" alt="Curso 2">
+                <div class="card-content">
+                    <h3>JavaScript</h3>
+                    <p>Aprenda a estilizar páginas da web com CSS.</p>
+                </div>
+            </div></a>
+
+            <a href=""><div class="course-card">
+                <img src="https://via.placeholder.com/300x180" alt="Curso 3">
+                <div class="card-content">
+                    <h3>Frameworks Web</h3>
+                    <p>Introdução ao JavaScript para dar vida ao seu site.</p>
+                </div>
+            </div></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Plus Education. Todos os direitos reservados. <a href="#contato">Entre em contato</a>.</p>
+    </footer>
+</body>
+</html>
