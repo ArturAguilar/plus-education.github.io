@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">    
+    <title>Home</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+        body {
+            font-family: 'Comfortaa', sans-serif;           
+            background-color: rgb(0, 89, 255);
+            font-size: 1em;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh; /* Centraliza a visualização do card na tela */
+        }
+
+        #borda {
+            background-color: white;
+            padding: 20px;
+            max-width: 700px;
+            width: 90%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra no contorno */
+        }
+
+        .card {
+            display: flex; /* Alinhamento horizontal */
+            align-items: center; /* Centraliza verticalmente */
+            background-color: white; /* Fundo branco */
+            border-radius: 10px; /* Bordas arredondadas */
+            padding: 20px; /* Espaçamento interno */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            margin: 10px 0; /* Espaçamento externo */
+            transition: transform 0.3s, box-shadow 0.3s; /* Transição suave para o efeito */
+        }
+
+        .card:hover {
+            transform: translateY(-10px); /* Move o card ligeiramente para cima */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra */
+        }
+
+        .card img {
+            height: 150px; /* Altura da imagem */
+            width: 150px; /* Largura da imagem */
+            border-radius: 10px; /* Bordas arredondadas na imagem */
+            margin-right: 20px; /* Espaço entre a imagem e o texto */
+        }
+
+        .card-content h1 {
+            font-size: 1.5em; /* Tamanho do título */
+            color: rgb(0, 89, 255); /* Cor do título */
+            margin-bottom: 10px; /* Espaço abaixo do título */
+        }
+
+        .card-content p {
+            font-size: 1em; /* Tamanho do texto */
+            color: #333; /* Cor do texto */
+            line-height: 1.5; /* Espaçamento entre linhas */
+        }
+
+        a {
+            text-decoration: none; /* Remove sublinhado do link */
+        }
+    </style>
+</head>
+<body>
+    <div id="borda">
+        <h1>Matemática & Suas Tecnologias</h1>
+        <hr>
+        <br>
+        <!-- Card horizontal -->
+        <a href="#">
+            <div class="card">
+                <img src="img/alemanha.png" alt="Alemanha">
+                <div class="card-content">
+                    <h1>Formatações</h1>
+                    <p>Esta é uma descrição do card, com a imagem ao lado e o texto alinhado horizontalmente. O card possui um design moderno e sombra para destaque.</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</body>
+</html>
