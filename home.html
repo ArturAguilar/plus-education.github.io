@@ -274,6 +274,30 @@
       footer a:hover {
           text-decoration: underline;
       }
+
+      /* Menu responsivo */
+      @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                background-color: var(--primary-color);
+                width: 100%;
+                padding: 20px 0;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+        }
   </style>
 </head>
 <body>
@@ -281,7 +305,8 @@
     <header>
         <nav>
             <div class="logo">+EDU</div>
-            <ul>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul id="menu">
                 <li><a href="#home">Início</a></li>
                 <li><a href="#cursos">Cursos Tech</a></li>
                 <li><a href="#cursos bncc">Cursos BNCC</a></li>
@@ -354,5 +379,15 @@
     <footer>
         <p>&copy; 2024 Plus Education. Todos os direitos reservados. <a href="#contato">Entre em contato</a>.</p>
     </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+            menuToggle.textContent = menu.classList.contains('active') ? '✖' : '☰';
+        });
+    </script>
 </body>
 </html>
