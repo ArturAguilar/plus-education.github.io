@@ -55,10 +55,6 @@
             align-items: center;
         }
 
-        nav ul li {
-            display: inline;
-        }
-
         nav ul li a {
             text-decoration: none;
             color: white;
@@ -70,7 +66,7 @@
             color: #cce4ff;
         }
 
-        /* Ícones de menu */
+        /* Ícone do menu */
         .menu-toggle {
             display: none;
             font-size: 1.5rem;
@@ -84,7 +80,7 @@
             outline: none;
         }
 
-        /* Menu responsivo */
+        /* Responsividade */
         @media (max-width: 768px) {
             nav ul {
                 display: none;
@@ -107,6 +103,52 @@
                 display: block;
             }
         }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 100vh;
+            background: url('https://via.placeholder.com/1920x1080/007BFF/ffffff?text=Imagem+de+Fundo') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-content {
+            text-align: center;
+            color: white;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -118,7 +160,6 @@
             <ul id="menu">
                 <li><a href="#home">Início</a></li>
                 <li><a href="#cursos">Cursos Tech</a></li>
-                <li><a href="#cursos bncc">Cursos BNCC</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
@@ -131,38 +172,6 @@
             <h1>Bem-vindo ao Plus Education</h1>
             <p>Explore uma plataforma completa para aprender e crescer em diversas áreas!</p>
         </div>
-    </section>
-
-    <!-- Cursos de Tecnologia -->
-    <section class="courses-section" id="cursos">
-        <h2>Cursos de Tecnologia</h2>
-        <div class="courses-container">
-            <!-- Exemplo de Cards de Cursos -->
-            <a href="desenvolvimento web/desenvolvimento web.html"><div class="course-card">
-                <img src="https://via.placeholder.com/300x180" alt="Curso 1">
-                <div class="card-content">
-                    <h3>Desenvolvimento Web</h3>
-                    <p>Aprenda HTML, CSS e JavaScript para criar sites incríveis.</p>
-                </div>
-            </div></a>
-        </div>
-    </section>
-
-    <!-- Sobre -->
-    <section class="about-section" id="sobre">
-        <h2>Sobre Nós</h2>
-        <p>O Plus Education é uma plataforma educacional dedicada a fornecer cursos de alta qualidade em áreas de tecnologia e educação. Nossa missão é capacitar estudantes com o conhecimento necessário para transformar suas carreiras e alcançar seus objetivos.</p>
-    </section>
-
-    <!-- Contato -->
-    <section class="contact-section" id="contato">
-        <h2>Entre em Contato</h2>
-        <form class="contact-form" action="#" method="post">
-            <input type="text" name="name" placeholder="Seu Nome" required>
-            <input type="email" name="email" placeholder="Seu E-mail" required>
-            <textarea name="message" rows="4" placeholder="Sua Mensagem" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
     </section>
 
     <!-- Footer -->
