@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Plus-Education.github.io/img/logo.png" type="image/x-icon">
+    <title>Plus Education - Curso de Frameworks JavaScript</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        /* Configuração global */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Comfortaa', sans-serif;
+            overflow-x: hidden;
+        }
+
+        body {
+            color: #333;
+            background-color: #f9f9f9;
+            --primary-color: #007BFF; /* Azul para combinar com o tema */
+        }
+
+        /* Menu */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a, nav ul li button {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-family: 'Comfortaa', sans-serif;
+        }
+
+        nav ul li a:hover, nav ul li button:hover {
+            color: #cce4ff;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        /* Seção do Curso */
+        .course-details {
+            padding: 60px 20px;
+            background-color: #ffffff;
+        }
+
+        .course-details h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 40px;
+        }
+
+        .course-description {
+            max-width: 900px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .course-description p {
+            margin-bottom: 20px;
+        }
+
+        .course-outline {
+            margin-top: 40px;
+        }
+
+        .outline-item {
+            background-color: #f4f4f4;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .outline-item h3 {
+            font-size: 1.6rem;
+            margin: 0;
+        }
+
+        .outline-item p {
+            margin: 5px 0;
+            font-size: 1rem;
+            color: #666;
+            display: none;
+            padding-top: 10px;
+        }
+
+        .outline-item.active p {
+            display: block;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu -->
+    <header>
+        <nav>
+            <div class="logo">Plus Education</div>
+            <ul>
+                <li><a href="/Plus-Education.github.io/home.html">Início</a></li>
+                <li><a href="/Plus-Education.github.io/home.html">Cursos Tech</a></li>
+                <li><a href="/Plus-Education.github.io/home.html">Cursos BNCC</a></li>
+                <li><a href="/Plus-Education.github.io/home.html">Sobre</a></li>
+                <li><a href="/Plus-Education.github.io/home.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Tela Azul de Início (Hero Section) -->
+    <section class="hero" id="home">
+        <h1>Curso de Frameworks JavaScript</h1>
+        <p>Aprenda os principais frameworks JavaScript (React, Vue.js e Angular) para desenvolver aplicações web modernas e eficientes.</p>
+    </section>
+
+    <!-- Detalhes do Curso -->
+    <section class="course-details" id="curso">
+        <h2>O que você vai aprender</h2>
+        <div class="course-description">
+            <p>Este curso oferece uma introdução aos frameworks mais populares do JavaScript, como <strong>React</strong>, <strong>Vue.js</strong>e <strong>Angular</strong>. Você aprenderá como criar interfaces dinâmicas, gerenciar o estado da aplicação e construir aplicações escaláveis.</p>
+            <p>Além disso, o curso abordará os conceitos fundamentais de componentes, roteamento, gerenciamento de estado e integrações com APIs.</p>
+            <p>Ao final do curso, você será capaz de escolher o framework mais adequado para seu projeto e aplicar os conhecimentos adquiridos para criar aplicações profissionais e modernas.</p>
+        </div>
+
+        <!-- Tópicos do Curso -->
+        <div class="course-outline">
+            <div class="outline-item">
+                <h3>Introdução ao React</h3>
+                <p>Entenda os conceitos básicos do React, como componentes, JSX e hooks.</p>
+            </div>
+
+            <div class="outline-item">
+                <h3>Componentes e Estado no React</h3>
+                <p>Como criar componentes dinâmicos e gerenciar o estado da aplicação no React.</p>
+            </div>
+
+            <div class="outline-item">
+                <h3>Introdução ao Vue.js</h3>
+                <p>Aprenda os fundamentos do Vue.js, como criação de componentes, reatividade e diretivas.</p>
+            </div>
+
+            <div class="outline-item">
+                <h3>Diretivas e Computed Properties no Vue.js</h3>
+                <p>Como usar diretivas e propriedades computadas para tornar suas aplicações mais dinâmicas.</p>
+            </div>
+
+            <div class="outline-item">
+                <h3>Introdução ao Angular</h3>
+                <p>Explore o Angular, incluindo a criação de componentes, serviços e a arquitetura MVC.</p>
+            </div>
+
+            <div class="outline-item">
+                <h3>Roteamento e Gerenciamento de Estado no Angular</h3>
+                <p>Como configurar o roteamento e gerenciar o estado da sua aplicação com o Angular.</p>
+            </div>
+
+            <div class="outline-item">
+                <h3>Integração com APIs e Serviços Externos</h3>
+                <p>Aprenda a integrar APIs externas em React, Vue.js e Angular para criar aplicações completas.</p>
+            </div>
+
+            <div class="outline-item">
+                <h3>Exercícios e Projetos Práticos</h3>
+                <p>Desafios para testar suas habilidades e solidificar os conceitos adquiridos em cada framework.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Plus Education. Todos os direitos reservados. <a href="#contato">Entre em contato</a>.</p>
+    </footer>
+
+    <script>
+        // Seleciona todos os itens de outline
+        const outlineItems = document.querySelectorAll('.outline-item');
+
+        // Adiciona um evento de clique em cada item de outline
+        outlineItems.forEach(item => {
+            item.addEventListener('click', () => {
+                // Fecha todos os itens
+                outlineItems.forEach(innerItem => {
+                    if (innerItem !== item) {
+                        innerItem.classList.remove('active');
+                    }
+                });
+
+                // Alterna a classe 'active' ao clicar no item
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
