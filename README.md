@@ -1,3 +1,3 @@
 # HTML-CSS
 
-## Salvando modificações no Git
+## Salvando alterações no git
