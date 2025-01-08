@@ -1,4 +1,4 @@
 # HTML-CSS
 
 ## Salvando alterações no git
-*uso do comando git restore
+*uso do comando git PUSH
