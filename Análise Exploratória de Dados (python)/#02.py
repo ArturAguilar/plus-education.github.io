@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 
-cuisine_rating = pd.read_csv('/home/arturaguilar426/GitHub/projetos/Plus-Education.github.io/Análise Exploratória de Dados/planilhas/Cuisine_rating.csv') # Ler o arquivo CSV
+cuisine_rating = pd.read_csv('/home/arturaguilar426/GitHub/projetos/Plus-Education.github.io/Análise Exploratória de Dados (python)/planilhas/Cuisine_rating.csv') # Ler o arquivo CSV
 
 print("\n--------------------------------------------------------- Exebição do Gráfico: -------------------------------------------------------------------------\n")
 a = cuisine_rating.head()

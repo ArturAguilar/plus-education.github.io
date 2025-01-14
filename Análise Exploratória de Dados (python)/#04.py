@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-houses_to_rent = pd.read_csv('/home/arturaguilar426/GitHub/projetos/Plus-Education.github.io/Análise Exploratória de Dados/planilhas/houses_to_rent.csv') # Ler o arquivo CSV
+houses_to_rent = pd.read_csv('/home/arturaguilar426/GitHub/projetos/Plus-Education.github.io/Análise Exploratória de Dados (python)/planilhas/houses_to_rent.csv') # Ler o arquivo CSV
 
 print("\n--------------------------------------------------------- Exebição do Gráfico: -------------------------------------------------------------------------\n")
 a = houses_to_rent.head()
